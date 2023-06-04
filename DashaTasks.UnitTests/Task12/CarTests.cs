@@ -25,6 +25,7 @@ public class CarTests
         Assert.That(action, Throws.ArgumentException);
     }
 
+    [Test]
     public void Car_VinLessThan17_ThrowsArgumentException()
     {
         TestDelegate action = () => { new Car("Hundai", 2000, "1111", BodyType.Sedan); };
@@ -35,7 +36,7 @@ public class CarTests
     [Test]
     public void GetInfo_Car_ReturnsCorrectString()
     {
-        const string expectedString = "Марка: Hundai. Год выпуска: 2000. VIN: 12345678901234567. Тиа кузова: Седан\n"
+        const string expectedString = "Марка: Hundai. Год выпуска: 2000. VIN: 12345678901234567. Тип кузова: Седан\n"
                                       + "Цена: 0. Дата продажи: 01.01.0001. ФИО покупателя: ";
         var car = new Car("Hundai", 2000, "12345678901234567", BodyType.Sedan);
         

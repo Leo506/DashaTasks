@@ -40,9 +40,9 @@ public class Car
         BodyType = bodyType;
     }
 
-    public string GetInfo()
+    public virtual string GetInfo()
     {
-        return $"Марка: {Brand}. Год выпуска: {YearOfRelease}. VIN: {VIN}. Тиа кузова: {GetBodyTypeName()}\n" +
+        return $"Марка: {Brand}. Год выпуска: {YearOfRelease}. VIN: {VIN}. Тип кузова: {GetBodyTypeName()}\n" +
                $"Цена: {Price}. Дата продажи: {DateOfSale.ToShortDateString()}. ФИО покупателя: {CustomerFullName}";
     }
 

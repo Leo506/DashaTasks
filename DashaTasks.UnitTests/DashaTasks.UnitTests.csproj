@@ -45,6 +45,9 @@
     <ItemGroup>
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="Task12\CarTests.cs" />
+        <Compile Include="Task13\CommissionCarTests.cs" />
+        <Compile Include="Task13\NewCarTests.cs" />
+        <Compile Include="Task13\UsedCarTests.cs" />
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\DashaTasks\DashaTasks.csproj">
