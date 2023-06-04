@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DashaTasks", "DashaTasks\Da
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DashaTasks.UnitTests", "DashaTasks.UnitTests\DashaTasks.UnitTests.csproj", "{1D78A287-32C2-477B-9F2B-DEAB07D7E4E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boxes", "Boxes\Boxes.csproj", "{6D0EE2F9-1AD3-427E-A84A-D0736FD285C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{1D78A287-32C2-477B-9F2B-DEAB07D7E4E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D78A287-32C2-477B-9F2B-DEAB07D7E4E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D78A287-32C2-477B-9F2B-DEAB07D7E4E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D0EE2F9-1AD3-427E-A84A-D0736FD285C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D0EE2F9-1AD3-427E-A84A-D0736FD285C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D0EE2F9-1AD3-427E-A84A-D0736FD285C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D0EE2F9-1AD3-427E-A84A-D0736FD285C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
