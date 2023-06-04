@@ -48,6 +48,8 @@
         <Compile Include="Task13\CommissionCarTests.cs" />
         <Compile Include="Task13\NewCarTests.cs" />
         <Compile Include="Task13\UsedCarTests.cs" />
+        <Compile Include="Task14\CarTests.cs" />
+        <Compile Include="Task14\DealershipTests.cs" />
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\DashaTasks\DashaTasks.csproj">

@@ -11,7 +11,7 @@ public enum BodyType
     Carbiolet
 }
 
-public class Car
+public class Car : IComparable<Car>
 {
     public readonly string VIN;
 
@@ -34,7 +34,7 @@ public class Car
             throw new ArgumentException();
         YearOfRelease = yearOfRelease;
 
-        if (vin.Length < 17)
+        if (vin.Length != 17)
             throw new ArgumentException();
         VIN = vin;
         BodyType = bodyType;
@@ -57,4 +57,15 @@ public class Car
             _ => string.Empty
         };
     }
+
+    public int CompareTo(Car other)
+    {
+        return Brand == other.Brand
+            ? Price.CompareTo(other.Price)
+            : string.Compare(Brand, other.Brand, StringComparison.InvariantCultureIgnoreCase);
+    }
+
+    public override bool Equals(object obj) => obj is Car car && VIN.Equals(car.VIN);
+
+    public override int GetHashCode() => VIN.GetHashCode();
 }

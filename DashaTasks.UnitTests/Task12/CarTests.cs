@@ -25,10 +25,11 @@ public class CarTests
         Assert.That(action, Throws.ArgumentException);
     }
 
-    [Test]
-    public void Car_VinLessThan17_ThrowsArgumentException()
+    [TestCase("1111")]
+    [TestCase("12345678901234567890")]
+    public void Car_VINHasNot17Characters_ThrowsArgumentException(string vin)
     {
-        TestDelegate action = () => { new Car("Hundai", 2000, "1111", BodyType.Sedan); };
+        TestDelegate action = () => { new Car("Hundai", 2000, vin, BodyType.Sedan); };
         
         Assert.That(action, Throws.ArgumentException);
     }
